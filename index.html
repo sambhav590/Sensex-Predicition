@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensex Prediction</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js (Graph ke liye) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>📈 Sensex Prediction</h1>
+
+  <input type="number" id="open" placeholder="Open Price">
+  <input type="number" id="close" placeholder="Close Price">
+  <input type="number" id="high" placeholder="High Price">
+
+  <button class="predict-btn" onclick="predictSensex()">Predict</button>
+  <button class="live-btn" onclick="getLiveSensex()">Live Sensex</button>
+
+  <h2 id="result"></h2>
+
+  <!-- Graph -->
+  <canvas id="chart"></canvas>
+</div>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>
